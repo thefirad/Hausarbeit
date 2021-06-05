@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDFF5E0726528228003EF46B /* CoachCarterV2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E0626528228003EF46B /* CoachCarterV2App.swift */; };
+		DDFF5E0926528228003EF46B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E0826528228003EF46B /* ContentView.swift */; };
+		DDFF5E0B26528229003EF46B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFF5E0A26528229003EF46B /* Assets.xcassets */; };
+		DDFF5E0E26528229003EF46B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFF5E0D26528229003EF46B /* Preview Assets.xcassets */; };
+		DDFF5E1026528229003EF46B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E0F26528229003EF46B /* Persistence.swift */; };
+		DDFF5E1326528229003EF46B /* CoachCarterV2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E1126528229003EF46B /* CoachCarterV2.xcdatamodeld */; };
+		DDFF5E1E2652839E003EF46B /* Exercise+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E1A2652839E003EF46B /* Exercise+CoreDataClass.swift */; };
+		DDFF5E1F2652839E003EF46B /* Exercise+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E1B2652839E003EF46B /* Exercise+CoreDataProperties.swift */; };
+		DDFF5E202652839E003EF46B /* Workout+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E1C2652839E003EF46B /* Workout+CoreDataClass.swift */; };
+		DDFF5E212652839E003EF46B /* Workout+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E1D2652839E003EF46B /* Workout+CoreDataProperties.swift */; };
+		DDFF5E2726528773003EF46B /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E2426528773003EF46B /* ProgressView.swift */; };
+		DDFF5E2826528773003EF46B /* AddExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E2526528773003EF46B /* AddExerciseView.swift */; };
+		DDFF5E2926528773003EF46B /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E2626528773003EF46B /* WorkoutView.swift */; };
+		DDFF5E2B26528C7E003EF46B /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E2A26528C7E003EF46B /* ExerciseView.swift */; };
+		DDFF5E2E26529D29003EF46B /* PlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E2D26529D29003EF46B /* PlanView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DDFF5E0326528228003EF46B /* CoachCarterV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoachCarterV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDFF5E0626528228003EF46B /* CoachCarterV2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachCarterV2App.swift; sourceTree = "<group>"; };
+		DDFF5E0826528228003EF46B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DDFF5E0A26528229003EF46B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDFF5E0D26528229003EF46B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DDFF5E0F26528229003EF46B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		DDFF5E1226528229003EF46B /* CoachCarterV2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoachCarterV2.xcdatamodel; sourceTree = "<group>"; };
+		DDFF5E1426528229003EF46B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDFF5E1A2652839E003EF46B /* Exercise+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Exercise+CoreDataClass.swift"; path = "CoachCarterV2/Model/Exercise+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		DDFF5E1B2652839E003EF46B /* Exercise+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Exercise+CoreDataProperties.swift"; path = "CoachCarterV2/Model/Exercise+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		DDFF5E1C2652839E003EF46B /* Workout+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Workout+CoreDataClass.swift"; path = "CoachCarterV2/Model/Workout+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		DDFF5E1D2652839E003EF46B /* Workout+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Workout+CoreDataProperties.swift"; path = "CoachCarterV2/Model/Workout+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		DDFF5E2426528773003EF46B /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		DDFF5E2526528773003EF46B /* AddExerciseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExerciseView.swift; sourceTree = "<group>"; };
+		DDFF5E2626528773003EF46B /* WorkoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		DDFF5E2A26528C7E003EF46B /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		DDFF5E2D26529D29003EF46B /* PlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDFF5E0026528228003EF46B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDFF5DFA26528228003EF46B = {
+			isa = PBXGroup;
+			children = (
+				DDFF5E0526528228003EF46B /* CoachCarterV2 */,
+				DDFF5E0426528228003EF46B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDFF5E0426528228003EF46B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF5E0326528228003EF46B /* CoachCarterV2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDFF5E0526528228003EF46B /* CoachCarterV2 */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF5E222652874A003EF46B /* Model */,
+				DDFF5E2326528763003EF46B /* Views */,
+				DDFF5E0826528228003EF46B /* ContentView.swift */,
+				DDFF5E0626528228003EF46B /* CoachCarterV2App.swift */,
+				DDFF5E0A26528229003EF46B /* Assets.xcassets */,
+				DDFF5E0F26528229003EF46B /* Persistence.swift */,
+				DDFF5E1426528229003EF46B /* Info.plist */,
+				DDFF5E1126528229003EF46B /* CoachCarterV2.xcdatamodeld */,
+				DDFF5E0C26528229003EF46B /* Preview Content */,
+			);
+			path = CoachCarterV2;
+			sourceTree = "<group>";
+		};
+		DDFF5E0C26528229003EF46B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF5E0D26528229003EF46B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DDFF5E222652874A003EF46B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF5E1A2652839E003EF46B /* Exercise+CoreDataClass.swift */,
+				DDFF5E1B2652839E003EF46B /* Exercise+CoreDataProperties.swift */,
+				DDFF5E1C2652839E003EF46B /* Workout+CoreDataClass.swift */,
+				DDFF5E1D2652839E003EF46B /* Workout+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDFF5E2326528763003EF46B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF5E2526528773003EF46B /* AddExerciseView.swift */,
+				DDFF5E2426528773003EF46B /* ProgressView.swift */,
+				DDFF5E2626528773003EF46B /* WorkoutView.swift */,
+				DDFF5E2A26528C7E003EF46B /* ExerciseView.swift */,
+				DDFF5E2D26529D29003EF46B /* PlanView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDFF5E0226528228003EF46B /* CoachCarterV2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDFF5E1726528229003EF46B /* Build configuration list for PBXNativeTarget "CoachCarterV2" */;
+			buildPhases = (
+				DDFF5DFF26528228003EF46B /* Sources */,
+				DDFF5E0026528228003EF46B /* Frameworks */,
+				DDFF5E0126528228003EF46B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoachCarterV2;
+			productName = CoachCarterV2;
+			productReference = DDFF5E0326528228003EF46B /* CoachCarterV2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDFF5DFB26528228003EF46B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					DDFF5E0226528228003EF46B = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = DDFF5DFE26528228003EF46B /* Build configuration list for PBXProject "CoachCarterV2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDFF5DFA26528228003EF46B;
+			productRefGroup = DDFF5E0426528228003EF46B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDFF5E0226528228003EF46B /* CoachCarterV2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDFF5E0126528228003EF46B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDFF5E0E26528229003EF46B /* Preview Assets.xcassets in Resources */,
+				DDFF5E0B26528229003EF46B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDFF5DFF26528228003EF46B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDFF5E2B26528C7E003EF46B /* ExerciseView.swift in Sources */,
+				DDFF5E2926528773003EF46B /* WorkoutView.swift in Sources */,
+				DDFF5E202652839E003EF46B /* Workout+CoreDataClass.swift in Sources */,
+				DDFF5E2E26529D29003EF46B /* PlanView.swift in Sources */,
+				DDFF5E1E2652839E003EF46B /* Exercise+CoreDataClass.swift in Sources */,
+				DDFF5E212652839E003EF46B /* Workout+CoreDataProperties.swift in Sources */,
+				DDFF5E1026528229003EF46B /* Persistence.swift in Sources */,
+				DDFF5E1326528229003EF46B /* CoachCarterV2.xcdatamodeld in Sources */,
+				DDFF5E0926528228003EF46B /* ContentView.swift in Sources */,
+				DDFF5E0726528228003EF46B /* CoachCarterV2App.swift in Sources */,
+				DDFF5E1F2652839E003EF46B /* Exercise+CoreDataProperties.swift in Sources */,
+				DDFF5E2826528773003EF46B /* AddExerciseView.swift in Sources */,
+				DDFF5E2726528773003EF46B /* ProgressView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DDFF5E1526528229003EF46B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDFF5E1626528229003EF46B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDFF5E1826528229003EF46B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CoachCarterV2/Preview Content\"";
+				DEVELOPMENT_TEAM = SAPP9Q63H3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CoachCarterV2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Firat.CoachCarterV2123;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDFF5E1926528229003EF46B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CoachCarterV2/Preview Content\"";
+				DEVELOPMENT_TEAM = SAPP9Q63H3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CoachCarterV2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Firat.CoachCarterV2123;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDFF5DFE26528228003EF46B /* Build configuration list for PBXProject "CoachCarterV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDFF5E1526528229003EF46B /* Debug */,
+				DDFF5E1626528229003EF46B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDFF5E1726528229003EF46B /* Build configuration list for PBXNativeTarget "CoachCarterV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDFF5E1826528229003EF46B /* Debug */,
+				DDFF5E1926528229003EF46B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DDFF5E1126528229003EF46B /* CoachCarterV2.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DDFF5E1226528229003EF46B /* CoachCarterV2.xcdatamodel */,
+			);
+			currentVersion = DDFF5E1226528229003EF46B /* CoachCarterV2.xcdatamodel */;
+			path = CoachCarterV2.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DDFF5DFB26528228003EF46B /* Project object */;
+}
