@@ -2,13 +2,15 @@
 //  ExerciseView.swift
 //  CoachCarterV2
 //
-//  Created by Firat Ak on 17.05.21.
+//  Created by Firat Ak on 05.06.21.
 //
 
 import SwiftUI
 
+/*
+ Anzeige Helfer um eine View zusammenzubauen
+ */
 struct ExerciseView: View {
-    //let exercise: Exercise
     let name: String
     let weight: Double
     let reps: Int16

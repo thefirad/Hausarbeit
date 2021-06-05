@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD13DCE8266BC671009FFD33 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13DCE7266BC671009FFD33 /* ProgressView.swift */; };
+		DD13DCEA266BC71A009FFD33 /* WorkoutNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13DCE9266BC71A009FFD33 /* WorkoutNameView.swift */; };
+		DD13DCF0266BCC1A009FFD33 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = DD13DCEF266BCC1A009FFD33 /* Charts */; };
+		DD729F87266BBE6E00DD51C3 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD729F86266BBE6E00DD51C3 /* LottieView.swift */; };
+		DD729F8A266BBEB100DD51C3 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DD729F89266BBEB100DD51C3 /* Lottie */; };
+		DD729F8C266BBFFA00DD51C3 /* curls.json in Resources */ = {isa = PBXBuildFile; fileRef = DD729F8B266BBFFA00DD51C3 /* curls.json */; };
 		DDFF5E0726528228003EF46B /* CoachCarterV2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E0626528228003EF46B /* CoachCarterV2App.swift */; };
 		DDFF5E0926528228003EF46B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E0826528228003EF46B /* ContentView.swift */; };
 		DDFF5E0B26528229003EF46B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFF5E0A26528229003EF46B /* Assets.xcassets */; };
@@ -17,14 +23,17 @@
 		DDFF5E1F2652839E003EF46B /* Exercise+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E1B2652839E003EF46B /* Exercise+CoreDataProperties.swift */; };
 		DDFF5E202652839E003EF46B /* Workout+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E1C2652839E003EF46B /* Workout+CoreDataClass.swift */; };
 		DDFF5E212652839E003EF46B /* Workout+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E1D2652839E003EF46B /* Workout+CoreDataProperties.swift */; };
-		DDFF5E2726528773003EF46B /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E2426528773003EF46B /* ProgressView.swift */; };
+		DDFF5E2726528773003EF46B /* PlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E2426528773003EF46B /* PlanView.swift */; };
 		DDFF5E2826528773003EF46B /* AddExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E2526528773003EF46B /* AddExerciseView.swift */; };
 		DDFF5E2926528773003EF46B /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E2626528773003EF46B /* WorkoutView.swift */; };
 		DDFF5E2B26528C7E003EF46B /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E2A26528C7E003EF46B /* ExerciseView.swift */; };
-		DDFF5E2E26529D29003EF46B /* PlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF5E2D26529D29003EF46B /* PlanView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD13DCE7266BC671009FFD33 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		DD13DCE9266BC71A009FFD33 /* WorkoutNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutNameView.swift; sourceTree = "<group>"; };
+		DD729F86266BBE6E00DD51C3 /* LottieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		DD729F8B266BBFFA00DD51C3 /* curls.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = curls.json; sourceTree = "<group>"; };
 		DDFF5E0326528228003EF46B /* CoachCarterV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoachCarterV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFF5E0626528228003EF46B /* CoachCarterV2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachCarterV2App.swift; sourceTree = "<group>"; };
 		DDFF5E0826528228003EF46B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,11 +46,10 @@
 		DDFF5E1B2652839E003EF46B /* Exercise+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Exercise+CoreDataProperties.swift"; path = "CoachCarterV2/Model/Exercise+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		DDFF5E1C2652839E003EF46B /* Workout+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Workout+CoreDataClass.swift"; path = "CoachCarterV2/Model/Workout+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		DDFF5E1D2652839E003EF46B /* Workout+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Workout+CoreDataProperties.swift"; path = "CoachCarterV2/Model/Workout+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		DDFF5E2426528773003EF46B /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		DDFF5E2426528773003EF46B /* PlanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanView.swift; sourceTree = "<group>"; };
 		DDFF5E2526528773003EF46B /* AddExerciseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExerciseView.swift; sourceTree = "<group>"; };
 		DDFF5E2626528773003EF46B /* WorkoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 		DDFF5E2A26528C7E003EF46B /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
-		DDFF5E2D26529D29003EF46B /* PlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,12 +57,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD729F8A266BBEB100DD51C3 /* Lottie in Frameworks */,
+				DD13DCF0266BCC1A009FFD33 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD13DCF1266BE085009FFD33 /* HelperViews */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF5E2A26528C7E003EF46B /* ExerciseView.swift */,
+				DD13DCE9266BC71A009FFD33 /* WorkoutNameView.swift */,
+			);
+			path = HelperViews;
+			sourceTree = "<group>";
+		};
+		DD729F85266BBE4200DD51C3 /* UIKitView */ = {
+			isa = PBXGroup;
+			children = (
+				DD729F86266BBE6E00DD51C3 /* LottieView.swift */,
+			);
+			path = UIKitView;
+			sourceTree = "<group>";
+		};
 		DDFF5DFA26528228003EF46B = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +101,8 @@
 		DDFF5E0526528228003EF46B /* CoachCarterV2 */ = {
 			isa = PBXGroup;
 			children = (
+				DD729F8B266BBFFA00DD51C3 /* curls.json */,
+				DD729F85266BBE4200DD51C3 /* UIKitView */,
 				DDFF5E222652874A003EF46B /* Model */,
 				DDFF5E2326528763003EF46B /* Views */,
 				DDFF5E0826528228003EF46B /* ContentView.swift */,
@@ -109,11 +138,11 @@
 		DDFF5E2326528763003EF46B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DD13DCF1266BE085009FFD33 /* HelperViews */,
 				DDFF5E2526528773003EF46B /* AddExerciseView.swift */,
-				DDFF5E2426528773003EF46B /* ProgressView.swift */,
+				DDFF5E2426528773003EF46B /* PlanView.swift */,
 				DDFF5E2626528773003EF46B /* WorkoutView.swift */,
-				DDFF5E2A26528C7E003EF46B /* ExerciseView.swift */,
-				DDFF5E2D26529D29003EF46B /* PlanView.swift */,
+				DD13DCE7266BC671009FFD33 /* ProgressView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -134,6 +163,10 @@
 			dependencies = (
 			);
 			name = CoachCarterV2;
+			packageProductDependencies = (
+				DD729F89266BBEB100DD51C3 /* Lottie */,
+				DD13DCEF266BCC1A009FFD33 /* Charts */,
+			);
 			productName = CoachCarterV2;
 			productReference = DDFF5E0326528228003EF46B /* CoachCarterV2.app */;
 			productType = "com.apple.product-type.application";
@@ -161,6 +194,10 @@
 				Base,
 			);
 			mainGroup = DDFF5DFA26528228003EF46B;
+			packageReferences = (
+				DD729F88266BBEB100DD51C3 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				DD13DCEE266BCC1A009FFD33 /* XCRemoteSwiftPackageReference "swiftui-charts" */,
+			);
 			productRefGroup = DDFF5E0426528228003EF46B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -176,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDFF5E0E26528229003EF46B /* Preview Assets.xcassets in Resources */,
+				DD729F8C266BBFFA00DD51C3 /* curls.json in Resources */,
 				DDFF5E0B26528229003EF46B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,7 +228,6 @@
 				DDFF5E2B26528C7E003EF46B /* ExerciseView.swift in Sources */,
 				DDFF5E2926528773003EF46B /* WorkoutView.swift in Sources */,
 				DDFF5E202652839E003EF46B /* Workout+CoreDataClass.swift in Sources */,
-				DDFF5E2E26529D29003EF46B /* PlanView.swift in Sources */,
 				DDFF5E1E2652839E003EF46B /* Exercise+CoreDataClass.swift in Sources */,
 				DDFF5E212652839E003EF46B /* Workout+CoreDataProperties.swift in Sources */,
 				DDFF5E1026528229003EF46B /* Persistence.swift in Sources */,
@@ -198,8 +235,11 @@
 				DDFF5E0926528228003EF46B /* ContentView.swift in Sources */,
 				DDFF5E0726528228003EF46B /* CoachCarterV2App.swift in Sources */,
 				DDFF5E1F2652839E003EF46B /* Exercise+CoreDataProperties.swift in Sources */,
+				DD729F87266BBE6E00DD51C3 /* LottieView.swift in Sources */,
+				DD13DCE8266BC671009FFD33 /* ProgressView.swift in Sources */,
 				DDFF5E2826528773003EF46B /* AddExerciseView.swift in Sources */,
-				DDFF5E2726528773003EF46B /* ProgressView.swift in Sources */,
+				DDFF5E2726528773003EF46B /* PlanView.swift in Sources */,
+				DD13DCEA266BC71A009FFD33 /* WorkoutNameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +377,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Firat.CoachCarterV2123;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Firat.CoachCarterV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,7 +399,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Firat.CoachCarterV2123;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Firat.CoachCarterV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -388,6 +428,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD13DCEE266BCC1A009FFD33 /* XCRemoteSwiftPackageReference "swiftui-charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/spacenation/swiftui-charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		DD729F88266BBEB100DD51C3 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD13DCEF266BCC1A009FFD33 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD13DCEE266BCC1A009FFD33 /* XCRemoteSwiftPackageReference "swiftui-charts" */;
+			productName = Charts;
+		};
+		DD729F89266BBEB100DD51C3 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD729F88266BBEB100DD51C3 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DDFF5E1126528229003EF46B /* CoachCarterV2.xcdatamodeld */ = {

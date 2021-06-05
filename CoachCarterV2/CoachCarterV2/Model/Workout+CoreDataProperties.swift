@@ -2,7 +2,7 @@
 //  Workout+CoreDataProperties.swift
 //  CoachCarterV2
 //
-//  Created by Firat Ak on 17.05.21.
+//  Created by Firat Ak on 05.06.21.
 //
 //
 

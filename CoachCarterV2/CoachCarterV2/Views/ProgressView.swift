@@ -1,71 +1,57 @@
 //
 //  ProgressView.swift
-//  FitnessTracker
+//  CoachCarterV2
 //
-//  Created by Firat Ak on 11.05.21.
+//  Created by Firat Ak on 05.06.21.
 //
 
 import SwiftUI
-import CoreData
+import Charts
 
+/*
+    View für Chart mit dummy daten ( fürs erste )
+ */
 struct ProgressView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-    
-    @FetchRequest(
-        sortDescriptors: [],animation: .default) private var workouts: FetchedResults<Workout>
-    
     var body: some View {
-        ScrollView {
-            ZStack {
-                Color.init("background").edgesIgnoringSafeArea(.all)
-                
-                VStack {
-                    ForEach(workouts, id: \.self) { training in
-                        PlanView(workoutName: training.wrappedWorkout)
-                            .onTapGesture {
-                                viewContext.delete(training)
-                                try! viewContext.save()
-                            }
+            VStack {
+                Spacer()
+                //Y-Achse anzeige
+                HStack {
+                    VStack(spacing: 45) {
+                        Text("250")
                         
-                        ForEach(training.exerciseArray, id: \.self) { ex in
-                            ExerciseView(name: ex.wrappedExerciseName, weight: ex.weight, reps: ex.reps, sets: ex.sets)
-                                .onTapGesture {
-                                    ex.workout?.removeFromWorkouts(ex)
-                                    try! viewContext.save()
-                                }
-                        }
+                        Text("200")
                         
+                        Text("100")
+                        
+                        Text("50")
                     }
+                    
+                    //Framework um chart zu generieren
+                    Chart(data: [0.8, 0.3, 0.5, 0.1])
+                        .chartStyle(
+                            StackedColumnChartStyle(spacing: 10, colors: [.blue])
+                            
+                        )
+                        .frame(width: UIScreen.main.bounds.width - 80, height: 300, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 }
                 
+                //X-Achse anzeige
+                HStack(spacing: 37) {
+                    Text("WE 1")
+                    Text("WE 2")
+                    Text("WE 3")
+                    Text("WE 4")
+                }
+                .padding(.leading, 30)
                 
-                
-                //.navigationBarTitle("Progress")
+                Spacer()
+
             }
-        }
-    }
-    
-    private let itemFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .short
-        formatter.timeStyle = .medium
-        return formatter
-    }()
-    
-    
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { workouts[$0] }.forEach(viewContext.delete)
-            
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
+            .navigationBarTitle("Chart 📈")
+            .offset(x: 0, y: -60)
+        
+        
     }
 }
 
